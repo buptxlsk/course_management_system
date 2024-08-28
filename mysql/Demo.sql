@@ -45,23 +45,18 @@ CREATE TABLE SC (
 
 -- 插入数据到教师表 T
 INSERT INTO T VALUES('T200000001', '王一', 'T200000001', 'T200000001');
-INSERT INTO T VALUES('T200000002', '刘二', 'T200000002', 'T200000002');
 INSERT INTO T VALUES('T200000003', '李三', 'T200000003', 'T200000003');
-INSERT INTO T VALUES('T200000004', '张四', 'T200000004', 'T200000004');
+INSERT INTO T VALUES('T200000004', '刘三', 'T200000004', 'T200000004');
 INSERT INTO T VALUES('T200000005', '吴五', 'T200000005', 'T200000005');
 INSERT INTO T VALUES('T200000006', '徐六', 'T200000006', 'T200000006');
 INSERT INTO T VALUES('T200000007', '王七', 'T200000007', 'T200000007');
 INSERT INTO T VALUES('T200000008', '赵八', 'T200000008', 'T200000008');
 INSERT INTO T VALUES('T200000009', '田九', 'T200000009', 'T200000009');
-INSERT INTO T VALUES('T200000010', '刘四', 'T200000010', 'T200000010');
-INSERT INTO T VALUES('T200000011', '王二', 'T200000011', 'T200000011');
-INSERT INTO T VALUES('T200000012', '李五', 'T200000012', 'T200000012');
-INSERT INTO T VALUES('T200000013', '王三', 'T200000013', 'T200000013');
-INSERT INTO T VALUES('T200000014', '赵九', 'T200000014', 'T200000014');
-INSERT INTO T VALUES('T200000015', '田十', 'T200000015', 'T200000015');
-INSERT INTO T VALUES('T200000016', '刘五', 'T200000016', 'T200000016');
+INSERT INTO T VALUES('T200000010', '徐七', 'T200000010', 'T200000010');
+
 
 -- 插入数据到学生表 S
+INSERT INTO S VALUES('S1','田兴瀚','男','20','自动化','S1','S1');
 INSERT INTO S VALUES('S202200001','李威','男','19','人工智能','S202200001','S202200001');
 INSERT INTO S VALUES('S202200002','刘鸣','男','20','自动化','S202200002','S202200002');
 INSERT INTO S VALUES('S202200003','李明','男','22','自动化','S202200003','S202200003');
@@ -93,31 +88,25 @@ INSERT INTO S VALUES('S202200028','林林','女','18','自动化','S202200028','
 INSERT INTO S VALUES('S202200029','陶红','女','19','人工智能','S202200029','S202200029');
 INSERT INTO S VALUES('S202200030','齐家','女','19','人工智能','S202200030','S202200030');
 
+
 -- 插入数据到课程表 C
-INSERT INTO C VALUES('C313210121', 'JAVA语言程序设计', 2, '计算机学院', '王一');
-INSERT INTO C VALUES('C313210132', '多媒体技术应用基础', 3, '计算机学院', '刘二');
-INSERT INTO C VALUES('C313210141', '分布式系统原理及应用', 2, '计算机学院', '李三');
-INSERT INTO C VALUES('C313210168', '服务计算导论：由管理到编程', 3, '计算机学院', '张四');
-INSERT INTO C VALUES('C313210175', '经典代码系统导读与分析', 4, '计算机学院', '吴五');
-INSERT INTO C VALUES('C313210140', '路由原理与技术', 4, '计算机学院', '吴五');
-INSERT INTO C VALUES('C313210134', '软件测试', 2, '计算机学院', '徐六');
-INSERT INTO C VALUES('C313210139', '社会大数据挖掘', 3, '计算机学院', '刘二');
-INSERT INTO C VALUES('C391212005', '敏捷软件开发基础', 2, '计算机学院', '王七');
-INSERT INTO C VALUES('C391212005', '深度学习理论与实践', 2, '人工智能学院', '刘三');
-INSERT INTO C VALUES('C391212002', '深度学习理论与实践', 4, '人工智能学院', '李四');
-INSERT INTO C VALUES('C391212004', '制图基础与计算机绘图', 2, '人工智能学院', '徐七');
-INSERT INTO C VALUES('C312210640', 'Excel统计实验', 2, '电子工程学院', '赵八');
-INSERT INTO C VALUES('C312210502', 'Matlab语言及信号处理应用', 3, '电子工程学院', '赵八');
-INSERT INTO C VALUES('C312210506', 'Matlab在信号与系统课程中的应用', 2, '电子工程学院', '田九');
-INSERT INTO C VALUES('C312210501', '电路基础程序设计', 2, '电子工程学院', '刘四');
-INSERT INTO C VALUES('C312210504', '分子细胞生物学', 2, '电子工程学院', '王二');
-INSERT INTO C VALUES('C312210505', '光计算机简介', 3, '电子工程学院', '刘四');
-INSERT INTO C VALUES('C312210615', '化妆品生物技术导论', 2, '电子工程学院', '李五');
-INSERT INTO C VALUES('C318210162', '高级人工智能安全', 2, '网络空间安全学院', '王三');
-INSERT INTO C VALUES('C318210162', '计算机围棋', 4, '网络空间安全学院', '赵九');
-INSERT INTO C VALUES('C318210167', '漫谈工业控制系统的安全', 2, '网络空间安全学院', '赵九');
-INSERT INTO C VALUES('C318210118', '密码简史', 2, '网络空间安全学院', '田十');
-INSERT INTO C VALUES('C318210114', '嵌入式系统技术基础', 3, '网络空间安全学院', '刘五');
+INSERT INTO C VALUES('C1', 'JAVA语言程序设计', 2, '计算机学院', '王一');
+INSERT INTO C VALUES('C2', '多媒体技术应用基础', 3, '计算机学院', '王一');
+INSERT INTO C VALUES('C3', '分布式系统原理及应用', 2, '计算机学院', '李三');
+INSERT INTO C VALUES('C4', '服务计算导论：由管理到编程', 3, '计算机学院', '李三');
+INSERT INTO C VALUES('C5', '经典代码系统导读与分析', 4, '计算机学院', '吴五');
+INSERT INTO C VALUES('C6', '路由原理与技术', 4, '计算机学院', '徐六');
+INSERT INTO C VALUES('C7', '软件测试', 2, '计算机学院', '徐六');
+INSERT INTO C VALUES('C8', '社会大数据挖掘', 3, '计算机学院', '王一');
+INSERT INTO C VALUES('C9', '敏捷软件开发基础', 2, '计算机学院', '王七');
+INSERT INTO C VALUES('C10', '深度学习理论与实践', 2, '人工智能学院', '刘三');
+INSERT INTO C VALUES('C11', '深度学习理论与实践', 4, '人工智能学院', '刘三');
+INSERT INTO C VALUES('C12', '制图基础与计算机绘图', 2, '人工智能学院', '徐七');
+INSERT INTO C VALUES('C13', 'Excel统计实验', 2, '电子工程学院', '赵八');
+INSERT INTO C VALUES('C14', 'Matlab语言及信号处理应用', 3, '电子工程学院', '赵八');
+INSERT INTO C VALUES('C15', 'Matlab在信号与系统课程中的应用', 2, '电子工程学院', '田九');
+INSERT INTO C VALUES('C16', '电路基础程序设计', 2, '电子工程学院', '田九');
+
 
 -- 插入数据到学生-课程关系表 SC，调整外键字段长度
 
