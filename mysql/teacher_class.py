@@ -13,7 +13,7 @@ class Teacher:
         # Define GUI components
         self.course_label = Label(self.root, text="请选择课程名：")
         self.student_label = Label(self.root, text="已选修此课程的学生：")
-        self.student_text = Text(self.root, width=20, height=13)
+        self.student_text = Text(self.root, width=20, height=13, state=DISABLED)  # 只读模式
         self.lb = Listbox(self.root, width=20, height=10)
         Label(self.root, text="学号：").grid(row=3, column=3)
         Label(self.root, text="成绩：").grid(row=5, column=3)
@@ -62,8 +62,10 @@ class Teacher:
 
     def find_score(self):
         CNAME = self.lb.get(self.lb.curselection())[0]
+        self.student_text.config(state=NORMAL)  # 启用编辑模式
         self.student_text.delete(1.0, END)
         cm.find_student_score(self.student_text, CNAME, self.TNO)
+        self.student_text.config(state=DISABLED)  # 设为只读模式
 
     def change_score(self):
         SNO = self.student_id_entry.get()

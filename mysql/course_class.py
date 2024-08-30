@@ -64,7 +64,7 @@ class course:
     # 退课
     def delete_course(self):
         course_number = self.course_entry.get()
-        cm.delete_choose_course(self.SNO, str(course_number))
+        cm.delete_choose_course(str(course_number))
         self.update_ui()
 
     # 更新ui
